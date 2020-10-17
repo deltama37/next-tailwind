@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/deltama37/next-typescript-firebase-materialui/issues"
   },
-  "homepage": "https://github.com/deltama37/next-typescript-firebase-materialui#readme"
+  "homepage": "https://github.com/deltama37/next-typescript-firebase-materialui#readme",
+  "dependencies": {
+    "next": "^9.5.5",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  }
 }
