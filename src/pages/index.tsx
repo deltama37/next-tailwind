@@ -1,6 +1,6 @@
 import { NextPage, GetStaticProps } from "next";
 import { db } from "@/firebasae";
-import { Message } from "@/types/message";
+import { Message } from "@/types";
 
 type Props = {
   message: Message;
