@@ -1,5 +1,5 @@
 # What's this
-this is the project template next.js + typescript + firebase
+This provides a preset template(next.js + typescript + eslint + prettier + firebase)
 
 # How to setup
 ## clone this with npx command
