@@ -1,7 +1,24 @@
-import { NextPage } from "next";
+import { NextPage, GetStaticProps } from "next";
+import { db } from "@/firebasae";
+import { Message } from "@/types/message";
 
-const HomePage: NextPage = () => {
-  return <div>Welcome to Next.js!</div>;
+type Props = {
+  message: Message;
 };
 
-export default HomePage;
+const IndexPage: NextPage<Props> = ({ message }: Props) => {
+  return (
+    <>
+      <h1>{message.title}</h1>
+      <span>{message.body}</span>
+    </>
+  );
+};
+
+export default IndexPage;
+
+export const getStaticProps: GetStaticProps = async () => {
+  const messageRefDoc = db.collection("messages").doc("message1");
+  const message = (await messageRefDoc.get()).data();
+  return { props: { message } };
+};

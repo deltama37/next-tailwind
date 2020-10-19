@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/deltama37/next-typescript-firebase-materialui#readme",
   "dependencies": {
+    "firebase": "^7.24.0",
     "next": "^9.5.5",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
