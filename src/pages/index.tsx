@@ -9,7 +9,7 @@ type Props = {
 };
 
 const IndexPage: NextPage<Props> = ({ message }: Props) => {
-  const { user } = useUser();
+  const { user, loadingUser } = useUser();
 
   const login = () => {
     firebase.auth().signInAnonymously();
@@ -19,7 +19,13 @@ const IndexPage: NextPage<Props> = ({ message }: Props) => {
     firebase.auth().signOut();
   };
 
-  if (user) {
+  if (loadingUser) {
+    return (
+      <>
+        <span>loading now...</span>
+      </>
+    );
+  } else if (user) {
     return (
       <>
         <h1>{message.title}</h1>
