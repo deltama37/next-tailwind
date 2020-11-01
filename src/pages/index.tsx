@@ -25,21 +25,25 @@ const IndexPage: NextPage<Props> = ({ message }: Props) => {
         <span>loading now...</span>
       </>
     );
-  } else if (user) {
-    return (
-      <>
-        <h1>{message.title}</h1>
-        <span>{message.body}</span>
-        <button onClick={logout}>logout</button>
-        {user.uid}
-      </>
-    );
   }
   return (
     <>
-      <h1>{message.title}</h1>
-      <span>{message.body}</span>
-      <button onClick={login}>login</button>
+      <div className="max-w-sm mx-auto flex p-6 bg-white rounded-lg shadow-xl">
+        <div className="ml-6 pt-1">
+          <h1 className="text-xl text-gray-900 leading-tight">
+            {message.title}
+          </h1>
+          <p className="text-base text-gray-600 leading-normal">
+            {message.body}
+          </p>
+        </div>
+      </div>
+      {user ? (
+        <button onClick={logout}>logout</button>
+      ) : (
+        <button onClick={login}>login</button>
+      )}
+      {user && <>{user.uid}</>}
     </>
   );
 };
