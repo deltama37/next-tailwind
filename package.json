@@ -1,5 +1,5 @@
 {
-  "name": "next-typescript-firebase-materialui",
+  "name": "next-typescript-firebase",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/deltama37/next-typescript-firebase-materialui.git"
+    "url": "git+https://github.com/deltama37/next-typescript-firebase.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/deltama37/next-typescript-firebase-materialui/issues"
+    "url": "https://github.com/deltama37/next-typescript-firebase/issues"
   },
-  "homepage": "https://github.com/deltama37/next-typescript-firebase-materialui#readme",
+  "homepage": "https://github.com/deltama37/next-typescript-firebase#readme",
   "dependencies": {
     "firebase": "^7.24.0",
     "next": "^9.5.5",
