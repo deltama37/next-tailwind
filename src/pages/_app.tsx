@@ -1,4 +1,4 @@
-import './styles.css'
+import "./styles.css";
 
 import { AppProps } from "next/app";
 import { CounterProvider } from "@/contexts/counterContext";
