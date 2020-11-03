@@ -32,6 +32,7 @@ const IndexPage: NextPage<Props> = ({ message }: Props) => {
         <div className="ml-6 pt-1">
           <h1 className="text-xl text-gray-900 leading-tight">
             {message.title}
+            <i className="material-icons">cloud_upload</i>
           </h1>
           <p className="text-base text-gray-600 leading-normal">
             {message.body}

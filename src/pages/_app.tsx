@@ -1,4 +1,5 @@
 import "./styles.css";
+import "@/styles/styles.scss";
 
 import { AppProps } from "next/app";
 import { CounterProvider } from "@/contexts/counterContext";
