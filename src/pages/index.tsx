@@ -3,6 +3,7 @@ import { db } from "@/firebasae";
 import { Message } from "@/types";
 import { useUser } from "@/contexts/userContext";
 import firebase from "@/firebasae";
+import AppTitle from "@/components/AppTitle";
 
 type Props = {
   message: Message;
@@ -37,6 +38,7 @@ const IndexPage: NextPage<Props> = ({ message }: Props) => {
           <p className="text-base text-gray-600 leading-normal">
             {message.body}
           </p>
+          <AppTitle />
         </div>
       </div>
       {user ? (
