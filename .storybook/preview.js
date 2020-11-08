@@ -1,4 +1,4 @@
-import "../src/pages/styles.css";
+import "../src/styles/styles.css";
 
 const addParameters = require('@storybook/react').addParameters;
 
